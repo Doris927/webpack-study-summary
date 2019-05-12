@@ -114,7 +114,7 @@ module.exports = {
 	output: {
 		//多个文件打包时，[name]占位
 		//publicPath: 表示统一加的路径
-		publicPath:'/',
+		//publicPath:'/',
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist')
 	}

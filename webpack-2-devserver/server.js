@@ -7,7 +7,6 @@ const complier = webpack(config);
 const app = express();
 
 app.use(webpackDevMiddleware(complier, {
-	publicPath: config.output.publicPath
 }));
 
 app.listen(3000, ()=>{
