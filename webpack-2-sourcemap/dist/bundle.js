@@ -93,9 +93,8 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-consele.log('hello world');
+eval("consele.log('hello world');//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvaW5kZXguanM/YjYzNSJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zZWxlLmxvZygnaGVsbG8gd29ybGQnKTsiXSwibWFwcGluZ3MiOiJBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/index.js\n");
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map

@@ -1,10 +1,22 @@
+/**
+ * Sourcemap是一个映射关系,报错时可以找到源文件
+ */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
-	devtool: 'source-map',
+	/**
+	 * source-map会生成一个map文件
+	 * inline-source-map 会生成在源文件内
+	 * cheap只提示行，不提示列
+	 * module还管别的loader
+	 * eval性能较好，但是
+	 * development最佳实践： cheap-module-eval-source-map
+	 * production最佳实践: cheap-module-source-map
+	 */
+	devtool: 'cheap-module-eval-source-map',
 	//可以打包多个文件
 	entry: {
 		main: './src/index.js',
