@@ -46,14 +46,13 @@ module.exports = {
 			test: /\.(scss)$/,
 			use: [//loader的执行顺序，从下到上，从右边到左边
 				'style-loader', 
-				'css-loader', 
-				// {
-				// 	loader: 'css-loader',
-				// 	options: {
-				// 		importLoaders: 2,
-				// 		modules: true //css样式模块化，避免样式冲突
-				// 	}
-				// },
+				{
+					loader: 'css-loader',
+					options: {
+						importLoaders: 2,
+						modules: true //css样式模块化，避免样式冲突
+					}
+				},
 				'sass-loader'
 			]
 		},
